@@ -15,7 +15,9 @@ img {
   display: block;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
 }
@@ -30,15 +32,36 @@ ul {
   padding: 0;
   margin: 0;
 } */
-a{
+a {
   text-decoration: none;
 }
 ul {
   list-style: none;
 }
-
+.container {
+  max-width: 1440px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* <!-- HEADER --> */
+.header-wrapper {
+  padding: 24px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  width: 420px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.navigation__list {
+  display: flex;
+}
+
 .header-title {
   /* font-family: Roboto; */
   font-style: normal;
@@ -55,22 +78,61 @@ ul {
 .navigation__link:focus {
   color: var(--main-font-color);
 }
+.navigation__item:first-child {
+  margin-right: 15px;
+}
+.menu__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--second-font-color);
+  border-radius: 50%;
+  width: 43px;
+  height: 43px;
+}
+.menu__link:hover,
+menu__link:focus {
+  background-color: var(--background-light);
+}
+
 /* <!-- END HEADER --> */
 
 /* <!-- HERO --> */
+.hero__section {
+  height: 583px;
+  width: 100%;
+  /* background-size: contain; */
+  /* background-size: auto; */
+  background: url("../images/desktop/hero_rectangle_7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background-dark);
+  /* background: url("./images/desktop/hero_rectangle_7.jpg"); */
+}
 /* <!-- END HERO --> */
 
 /* <!-- COLLECTION --> */
+.collection__section {
+  margin-top: 70px;
+}
+.collection__container {
+  padding: 0 80px;
+}
+.collection-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .collection-top__header {
   font-weight: bold;
   font-size: 48px;
   line-height: 56px;
 }
-
 .button {
   background: var(--background-dark);
   color: var(--light-font-color);
   border-radius: 10px;
+  border: none;
   width: 108px;
   height: 44px;
 }
@@ -89,5 +151,14 @@ ul {
 .collection__item-name {
   font-size: 18px;
   line-height: 21px;
+}
+.collection__list {
+  display: flex;
+  margin-top: 52px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.collection__item-name {
+  margin-top: 20px;
 }
 /* <!-- END COLLECTION --> */
