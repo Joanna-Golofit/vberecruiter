@@ -4,63 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Recruitment Design</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
-      <nav>
-        <h3>Product name</h3>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Collection</a></li>
-        </ul>
-        <a href="#"><img src="./images/desktop/menu.png" alt="menu icon" /></a>
+      <div class="container">
+        <h3 class="header-title" >Product name</h3>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./about.html">About</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Collection</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="menu" href="#"
+          ><img src="./images/desktop/menu.png" alt="menu icon"
+        /></a>
         <!-- <a href="#"><img src="./images/mobile/hamburger.png" alt="menu icon"></a> -->
-      </nav>
+      </div>
     </header>
+
     <main>
       <!-- HERO -->
-      <section>
-        <img src="./images/desktop/hero Rectangle 7.jpg" alt="" />
+      <section class="section">
+        <div class="container">
+          <img src="./images/desktop/hero Rectangle 7.jpg" alt="" />
+        </div>
       </section>
 
       <!-- COLLECTION -->
-      <section>
-        <div>
-          <h2>Collection</h2>          
-          <button type="button">see all</button>
-        </div>
+      <section class="section">
+        <div class="container">
+          <div class="collection-top">
+            <h2 class="collection-top__header">Collection</h2>
+            <button class="button" type="button">see all</button>
+          </div>
 
-        <div>
-          <ul>
-            <li>
-              <a href="#">
-                <img src="./images/item Rectangle 6.jpg" alt="item of collection">
-                <p>Collection item</p>
-              </a>
-            </li>
-            <li>
-               <a href="#">
-                <img src="./images/item Rectangle 6.jpg" alt="item of collection">
-                <p>Collection item</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/item Rectangle 6.jpg" alt="item of collection">
-                <p>Collection item</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/item Rectangle 6.jpg" alt="item of collection">
-                <p>Collection item</p>
-              </a>
-            </li>
-          </ul>
+          <div class="collection-wrapper">
+            <ul class="collection__list">
+              <li class="collection__item">
+                <a  class="collection__link" href="#">
+                  <img  class="collection__img"
+                    src="./images/item Rectangle 6.jpg"
+                    alt="item of collection"
+                  />
+                  <p class="collection__item-name">Collection item</p>
+                </a>
+              </li>
+               <li class="collection__item">
+                <a  class="collection__link" href="#">
+                  <img  class="collection__img"
+                    src="./images/item Rectangle 6.jpg"
+                    alt="item of collection"
+                  />
+                  <p class="collection__item-name">Collection item</p>
+                </a>
+              </li>
+               <li class="collection__item">
+                <a  class="collection__link" href="#">
+                  <img  class="collection__img"
+                    src="./images/item Rectangle 6.jpg"
+                    alt="item of collection"
+                  />
+                  <p class="collection__item-name">Collection item</p>
+                </a>
+              </li>
+               <li class="collection__item">
+                <a  class="collection__link" href="#">
+                  <img  class="collection__img"
+                    src="./images/item Rectangle 6.jpg"
+                    alt="item of collection"
+                  />
+                  <p class="collection__item-name">Collection item</p>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>Joanna Gołofit</footer>
   </body>
 </html>
