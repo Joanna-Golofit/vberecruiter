@@ -1,0 +1,46 @@
+:root {
+  // --main-font-color: #000000;
+  --second-font-color: #9d9d9d;
+  --light-font-color: #ffffff;
+  --main-font: "Roboto", "Verdana", "Tahoma", sans-serif;
+  --background-dark: #6d888e;
+  --background-light: #e1eae4;
+}
+
+body {
+  font-family: var(--main-font);
+  color: $main-font-color;
+}
+img {
+  display: block;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+/* h1,
+h2,
+h3, 
+p {
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+} */
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1440px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
