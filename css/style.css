@@ -67,12 +67,14 @@ ul {
   font-style: normal;
   font-size: 24px;
   line-height: 28px;
+  animation-delay: 2s;
 }
 .navigation__link {
   font-size: 18px;
   line-height: 21px;
   color: var(--second-font-color);
   text-decoration: none;
+  transition: color 500ms linear;
 }
 .navigation__link:hover,
 .navigation__link:focus {
@@ -89,6 +91,8 @@ ul {
   border-radius: 50%;
   width: 43px;
   height: 43px;
+  transition: background-color 300ms linear;
+
 }
 .menu__link:hover,
 menu__link:focus {
@@ -135,6 +139,8 @@ menu__link:focus {
   border: none;
   width: 108px;
   height: 44px;
+  transition: background-color 500ms linear;
+
 }
 .button:hover,
 .button:focus {
