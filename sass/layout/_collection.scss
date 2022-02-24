@@ -8,6 +8,14 @@
 }
 .collection__link {
   color: $main-font-color;
+  transition: font-weight 500ms linear;
+
+  &:hover .collection__img {
+    transform: scale(1.05);
+  }
+  &:hover {
+    font-weight: bold;
+  }
 }
 .collection-top {
   display: flex;
@@ -34,7 +42,7 @@
   height: 32px; // tu
   font-size: 16px;
   line-height: 19px;
-  transition: background-color 500ms linear;
+  transition: background-color 500ms linear, color 500ms linear;
 
   &:hover,
   &:focus {
@@ -58,6 +66,8 @@
 .collection__img {
   width: 161px;
   height: 172px;
+  transition: transform 500ms linear;
+
 }
 
 @media screen and (min-width: 1200px) {

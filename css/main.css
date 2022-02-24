@@ -85,7 +85,7 @@ ul {
 }
 
 .mobile-menu__link:hover, .mobile-menu__link:focus {
-  transform: scale(1.05);
+  transform: scale(1.15);
   transform: rotate(-10deg);
 }
 
@@ -131,16 +131,37 @@ ul {
   min-width: 375px;
   margin: 0 auto;
   background: url("../images/mobile/hero_rectangle_7.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 20%;
   background-size: cover;
+  background-repeat: no-repeat;
   background-color: #6d888e;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__section {
+    background: url("../images/mobile/hero_rectangle_7@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__section {
     width: 100%;
     background: url("../images/desktop/hero_rectangle_7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 10%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__section {
+    background: url("../images/desktop/hero_rectangle_7@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
   }
 }
 
@@ -156,6 +177,15 @@ ul {
 
 .collection__link {
   color: #000000;
+  transition: font-weight 500ms linear;
+}
+
+.collection__link:hover .collection__img {
+  transform: scale(1.05);
+}
+
+.collection__link:hover {
+  font-weight: bold;
 }
 
 .collection-top {
@@ -186,7 +216,7 @@ ul {
   height: 32px;
   font-size: 16px;
   line-height: 19px;
-  transition: background-color 500ms linear;
+  transition: background-color 500ms linear, color 500ms linear;
 }
 
 .button:hover, .button:focus {
@@ -208,6 +238,7 @@ ul {
 .collection__img {
   width: 161px;
   height: 172px;
+  transition: transform 500ms linear;
 }
 
 @media screen and (min-width: 1200px) {

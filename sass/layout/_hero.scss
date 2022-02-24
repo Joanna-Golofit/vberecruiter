@@ -6,17 +6,42 @@
   margin: 0 auto;
   // width: 100%;
   background: url("../images/mobile/hero_rectangle_7.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-position:  50% 20%;
   background-size: cover;
+  background-repeat: no-repeat;
   // background-size: contain;
   background-color: $background-dark;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+ .hero__section {
+  background: url("../images/mobile/hero_rectangle_7@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:  50% 20%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
 .hero__section {
   width: 100%;
   background: url("../images/desktop/hero_rectangle_7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:  50% 10%;  
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+ .hero__section {
+  background: url("../images/desktop/hero_rectangle_7@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:  50% 20%;
+  }
 }
 
 }
