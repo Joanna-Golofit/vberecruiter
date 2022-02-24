@@ -1,14 +1,14 @@
-:root {
-  // --main-font-color: #000000;
-  --second-font-color: #9d9d9d;
-  --light-font-color: #ffffff;
-  --main-font: "Roboto", "Verdana", "Tahoma", sans-serif;
-  --background-dark: #6d888e;
-  --background-light: #e1eae4;
-}
+// :root {
+// --main-font-color: #000000;
+// --second-font-color: #9d9d9d;
+// --light-font-color: #ffffff;
+// --main-font: "Roboto", "Verdana", "Tahoma", sans-serif;
+// --background-dark: #6d888e;
+// --background-light: #e1eae4;
+// }
 
 body {
-  font-family: var(--main-font);
+  font-family: $main-font;
   color: $main-font-color;
 }
 img {
@@ -38,9 +38,23 @@ a {
 ul {
   list-style: none;
 }
+
 .container {
-  max-width: 1440px;
+  // background-color: green;
+  min-width: 375px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+// .container {
+//   max-width: 1440px;
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
