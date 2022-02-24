@@ -379,4 +379,20 @@ footer {
     max-width: 50%;
   }
 }
+
+.header__item {
+  background-color: #6d888e;
+}
+
+.header-title.light {
+  color: white;
+}
+
+.navigation__link.light {
+  color: white;
+}
+
+.navigation__link.light:hover {
+  color: #9d9d9d;
+}
 /*# sourceMappingURL=main.css.map */

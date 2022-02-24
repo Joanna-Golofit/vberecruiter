@@ -1,0 +1,13 @@
+.header__item {
+  background-color: $background-dark;
+}
+.header-title.light {
+  color: white;
+} 
+.navigation__link.light {
+  color: white;
+
+  &:hover {
+    color: $second-font-color;
+  }
+}
