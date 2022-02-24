@@ -1,0 +1,102 @@
+.coordinates__container {
+  padding: 16px;
+}
+.coordinates__link {
+  color: $second-font-color;
+}
+.coordinates__text {
+  margin: 0 10px;
+  color: $second-font-color;
+}
+.article__container {
+  padding: 16px;
+  display: flex;
+}
+.article__header {
+  margin-bottom: 20px;
+}
+.article__text {
+  font-size: 18px;
+  line-height: 24px;
+}
+.navigation__link.here {
+  color: $main-font-color;
+}
+
+// .article__text-wrapper, .article__img-wrapper {
+//  flex-grow: 50%;
+// }
+.header__about {
+  background-color: $background-light;
+}
+.about__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 162px;
+  min-width: 375px;
+  margin: 0 auto;
+  // width: 100%;
+  background: url("../images/mobile/about.jpg");
+  background-position: 50% 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-size: contain;
+  background-color: $background-dark;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .about__section {
+    background: url("../images/mobile/about@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 10%;
+  }
+}
+
+.about__title {
+  font-size: 36px;
+  line-height: 42px;
+}
+.coordinates__container.container {
+  display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  .about__section {
+    width: 100%;
+    height: 240px;
+    background: url("../images/desktop/about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 10%;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .about__section {
+      background: url("../images/desktop/about@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 20%;
+    }
+  }
+  .about__title {
+    font-size: 66px;
+    line-height: 70px;
+  }
+  .desktop-menu__link.about {
+    transition: box-shadow 300ms linear;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 0px 10px 2px rgba(66, 68, 90, 0.51);
+    }
+  }
+  .article__text-wrapper {
+    max-width: 50%;
+  }
+}

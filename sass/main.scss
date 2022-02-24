@@ -1,7 +1,9 @@
-@import './base/variables';
-@import './base/common';
+@import "./base/variables";
+@import "./base/common";
 
 @import "./layout/nav";
 @import "./layout/hero";
 @import "./layout/collection";
 @import "./layout/footer";
+
+@import "./pages/about";
